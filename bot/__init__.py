@@ -15,7 +15,6 @@ class Bot:
 
     def run(self):
         self.updater.start_polling()
-        self.updater.idle()
 
     def get_bot(self):
         return self.updater.bot
