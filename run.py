@@ -1,5 +1,10 @@
+import os
+
 from server import Server
 from bot import Bot
+
+
+TOKEN = os.environ["TOKEN"]
 
 
 class Logger:
@@ -13,7 +18,7 @@ class Logger:
         self.server.run()
 
 
-b = Bot(token="991842513:AAG98klfgnMa8KcE2iEoKFVmIYqmtFgqhC8")
+b = Bot(token=TOKEN)
 b.run()
 s = Server(b.get_bot())
 s.run()
