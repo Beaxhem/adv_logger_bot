@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from db.database import Session, Project
 from flask import request, jsonify
 
